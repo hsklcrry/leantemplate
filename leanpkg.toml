@@ -1,0 +1,10 @@
+[package]
+name = "test"
+version = "0.1"         # no semantic significance currently
+lean_version = "3.3.0"  # optional, prints a warning on mismatch with Lean executable
+#path = ""            # hard-coded, will be removed in the future
+timeout = 100           # optional, passed to `lean` as `-T` parameter
+
+[dependencies]
+# git dependency
+mathlib = { git = "https://github.com/leanprover/mathlib", rev = "62f7883d937861b618ae8bd645ee16ec137dd0bd" }
