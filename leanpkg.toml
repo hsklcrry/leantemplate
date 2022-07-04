@@ -1,10 +1,8 @@
 [package]
-name = "test"
-version = "0.1"         # no semantic significance currently
-lean_version = "3.3.0"  # optional, prints a warning on mismatch with Lean executable
-#path = ""            # hard-coded, will be removed in the future
-timeout = 100           # optional, passed to `lean` as `-T` parameter
+name = "testproj"
+version = "0.1"
+lean_version = "leanprover-community/lean:3.44.1"
+path = "src"
 
 [dependencies]
-# git dependency
-mathlib = { git = "https://github.com/leanprover/mathlib", rev = "62f7883d937861b618ae8bd645ee16ec137dd0bd" }
+mathlib = {git = "https://github.com/leanprover/mathlib", rev = "9e701b983661e6bad0006dee10ef1467d04e79c6"}
