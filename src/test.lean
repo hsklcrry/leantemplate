@@ -1,9 +1,11 @@
 
-import init.algebra.functions
+import linear_algebra.basis -- linear_algebra.bilinear_form linear_algebra.eigenspace
+import algebra.lie.basic 
+import algebra.lie.nilpotent
 
 
-#check 1+1
+-- 2-dimensional Lie algebra is nilpotent
+variables (R : Type*) (L : Type*) [comm_ring R] [lie_ring L] [lie_algebra R L]
 
-def a : nat := 3 
+#check R 
 
-#check a 
